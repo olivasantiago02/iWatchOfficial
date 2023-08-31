@@ -1,0 +1,178 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url(../images/Cornerstone.png);
+}
+
+header {
+    background-color: #000000; /* Color de fondo */
+    color: white; /* Color del texto */
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.2); /* Sombra */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    max-width: 100px;
+    height: auto;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav li a:hover {
+    background-color: white;
+    color: #333;
+}
+
+.main-title {
+    font-size: 36px; /* Tamaño de la fuente */
+    text-align: center; /* Centrar el título */
+    color: #ffffff; /* Color del texto */
+    text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.2); /* Sombra del texto */
+    margin: 0; /* Elimina el margen superior por defecto */
+}
+
+.intro-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+}
+
+.intro-content {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.intro-title {
+    font-size: 33px;
+    color: #fff; /* Cambia el color del texto a tu preferencia */
+}
+
+.intro-text {
+    font-size: 22px;
+    margin-top: 10px;
+    color: #fff; /* Cambia el color del texto a tu preferencia */
+}
+
+.intro-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: orange; /* Color naranja */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.intro-button:hover {
+    background-color: #ff9900; /* Color naranja más claro al pasar el mouse */
+}
+
+.join-community {
+    background-color: #33333393; /* Fondo transparente */
+    border: 8px solid #ff9900; /* Marco de color adecuado */
+    padding: 50px 0;
+    text-align: center;
+}
+
+.join-title {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.join-text {
+    font-size: 22px;
+    color: #fefefe; /* Color de texto */
+    margin-top: 10px;
+}
+
+.social-logos {
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.social-logos.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.social-logos img {
+    width: 80px;
+    height: 80px;
+    margin: 0 30px;
+    vertical-align: middle;
+}
+
+.feature-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0;
+}
+
+.feature-card {
+    flex: 1; /* Distribución uniforme de ancho entre las tarjetas */
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    border-radius: 10px; /* Bordes redondeados */
+    margin: 0 10px; /* Separación horizontal entre tarjetas */
+}
+
+.feature-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px; /* Bordes redondeados para la imagen */
+}
+
+.feature-title {
+    font-size: 24px;
+    color: #333;
+}
+
+.feature-text {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.feature-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
