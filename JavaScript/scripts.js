@@ -25,11 +25,14 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-const testimonialsContainer = document.querySelector('.testimonials-container');
+const whatsappButton = document.querySelector('.whatsapp-button');
 
-function animateTestimonials() {
-    const firstTestimonial = testimonialsContainer.firstElementChild;
-    testimonialsContainer.appendChild(firstTestimonial);
-}
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 100) {
+        whatsappButton.classList.add('show-whatsapp-button');
+    } else {
+        whatsappButton.classList.remove('show-whatsapp-button');
+    }
+});
 
-setInterval(animateTestimonials, 5000); // Cambia de testimonio cada 5 segundos
+

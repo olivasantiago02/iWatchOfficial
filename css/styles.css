@@ -52,7 +52,7 @@ nav li a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     
 }
 
@@ -77,8 +77,9 @@ nav li a:hover {
     padding: 10px 20px;
     background-color: orange; /* Color naranja */
     color: #fff;
+    text-decoration: none;
     border: none;
-    border-radius: 5px;
+    border-radius: 7px;
     cursor: pointer;
     transition: background-color 0.3s;
 }
@@ -144,8 +145,8 @@ nav li a:hover {
 }
 
 .feature-card img {
-    max-width: 100%;
-    height: auto;
+    max-width: 580px;
+    height: 580px;
     margin-bottom: 15px;
     border-radius: 8px; /* Bordes redondeados para la imagen */
 }
@@ -167,8 +168,188 @@ nav li a:hover {
     background-color: orange;
     color: #fff;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 9px;
 }
+
+/* Estilos para el logo de WhatsApp flotante */
+.whatsapp-float {
+    position: fixed;
+    bottom: 30px; /* Ajusta la distancia desde abajo */
+    right: 30px; /* Ajusta la distancia desde la derecha */
+    z-index: 9999; /* Asegura que esté por encima de otros elementos */
+}
+
+.whatsapp-float img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0px 2px 5px rgb(0, 0, 0); /* Añade sombra al logo */
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.social-icons a {
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.contact-section {
+    background-color: #333;
+    color: #fff;
+    margin-top: 20px;
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.contact-card {
+    background-color: #222;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    transition: box-shadow 0.3s ease-in-out; /* Agrega una transición suave */
+    width: 30%; /* Ajusta el ancho de las tarjetas según tu preferencia */
+}
+
+.contact-card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); /* Agrega sombra al pasar el mouse */
+}
+
+.contact-card img {
+    max-width: 80px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.contact-card h3 {
+    font-size: 18px;
+}
+
+.map-section {
+    background-color: #222;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.map-info {
+    margin-bottom: 20px;
+}
+
+.map-container {
+    max-width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+}
+
+.form {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../images/fonfofORM1.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 20px;
+}
+
+.left-section {
+    flex: 1;
+    padding: 20px;
+    color: #2b2828;
+}
+
+.right-section {
+    flex: 1;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Estilo oscuro para el formulario */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+.right-section h2 {
+    margin-top: 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    font-weight: bold;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra suave en el texto */
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.1); /* Fondo con transparencia */
+    color: #fff;
+}
+
+button {
+    background-color: #ff6600;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #ff9900; /* Cambio de color al pasar el mouse */
+}
+
+#enviado-mensaje {
+    background-color: rgba(0, 128, 0, 0.7); /* Fondo verde para mensaje de envío */
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    display: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+
+/* Estilos para hacer responsive */
+@media (max-width: 768px) {
+    .contact-section {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .contact-block {
+        margin-bottom: 20px;
+    }
+}
+
 
 
 

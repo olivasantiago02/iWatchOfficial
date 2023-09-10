@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+    <script src="../JavaScript/scripts.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../images/Logo-iWatch.jpeg" alt="Logo de tu negocio">
+        </div>
+            <h1 class="main-title">iWatch</h1>
+        <nav>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../html/contacto.html">Contacto</a></li>
+                <li><a href="../html/nosotros.html">Nosotros</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="contact-section">
+        <div class="contact-card">
+            <img src="../images/telefonomsm.png" alt="Teléfono">
+            <h3>Número de Teléfono</h3>
+            <p>+54 9 351-309-0558</p>
+        </div>
+        <div class="contact-card">
+            <img src="../images/mobilemail.png" alt="Correo Electrónico">
+            <h3>Correo Electrónico</h3>
+            <p>Iwatchok2@gmail.com</p>
+        </div>
+        <div class="contact-card">
+            <img src="../images/work-station.png" alt="Oficina">
+            <h3>Dirección de Oficina</h3>
+            <p>Figueroa Alcorta 163, Cordoba Capital</p>
+        </div>
+    </section>
+
+    <section class="map-section">
+        <div class="map-info">
+            <h2>Encuéntranos en el Mapa</h2>
+            <p>Estamos ubicados en la siguiente dirección:</p>
+            <p>Figueroa Alcorta 163, Cordoba Capital</p>
+        </div>
+        <div class="map-container">
+            <iframe src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCMXBGcWYAcf006PrvRzTYkJO_z7TQuTTg&q=-31.290836950822918, -64.29526070368323" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="form">
+    <div class="container">
+        <div class="left-section">
+            <h1>¡Déjanos tu Comentario!</h1>
+            <p>Estamos encantados de escuchar tus opiniones y sugerencias.</p>
+        </div>
+        <div class="right-section">
+            <h2>Formulario de Comentarios</h2>
+            <form id="comment-form"  action="../php/procesar_formulario.php" method="post">
+                <div class="form-group">
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+                <div class="form-group">
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" name="apellido" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="comentario">Comentario:</label>
+                    <textarea id="comentario" name="comentario" required></textarea>
+                </div>
+                <button type="submit">Enviar Comentario</button>
+            </form>
+            <p id="enviado-mensaje" class="hidden">Tu comentario ha sido enviado.</p>
+        </div>
+    </div>
+    </section>
+    <div class="whatsapp-float">
+        <a href="https://wa.me/tunumerodetelefono" target="_blank">
+            <img src="../images/whatsapp.png" alt="Logo de WhatsApp">
+        </a>
+    </div>
+    
+    <script src="../JavaScript/scripts.js"></script>
+</body>
+</html>
