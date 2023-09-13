@@ -336,7 +336,34 @@ button:hover {
     display: none;
 }
 
+.image-section {
+    background-image: url('../images/iWatchOfficial.png');
+    background-size: cover;
+    background-position: center;
+    padding: 120px 0; /* Ajusta el espaciado según sea necesario */
 
+    /* Estilos de sombra */
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    color: #fff; /* Color de texto */
+    text-align: center;
+}
+
+.content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px; /* Tamaño del título */
+    font-family: 'Tu Fuente Bonita', sans-serif; /* Cambia 'Tu Fuente Bonita' por la fuente deseada */
+    /* Otras propiedades de estilo para el título */
+}
+
+p {
+    font-size: 18px; /* Tamaño del mini texto */
+    /* Otras propiedades de estilo para el mini texto */
+}
 
 /* Estilos para hacer responsive */
 @media (max-width: 768px) {
